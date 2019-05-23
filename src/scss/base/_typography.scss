@@ -1,0 +1,77 @@
+body {
+  font-size: 1rem;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  color: #939393;
+  background: #fff;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #727272;
+}
+
+h2,
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+blockquote,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre {
+  margin-bottom: 0.55rem;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+figure,
+table,
+th,
+td,
+caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}

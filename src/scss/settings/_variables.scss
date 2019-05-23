@@ -1,0 +1,46 @@
+// font basics
+$base-fontsize: 14px;
+$base-lineheight: 1.75;
+$color-text: #000;
+
+// fontstacks
+$default-font: "Segoe UI", Helvetica, Arial, sans-serif;
+
+// colors
+$primary-color: #000;
+$secondary-color: #f8bb10;
+$grey: #fafafa;
+
+// spacing
+$space: 1rem;
+
+.secondary-color {
+  color: #f8bb10;
+}
+
+.hidden {
+  display: none !important;
+}
+.right {
+  float: right !important;
+}
+.left {
+  float: left !important;
+}
+
+.padding {
+  padding: 1rem !important;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.margin {
+  margin: 1rem !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-border {
+  border: 0 !important;
+}

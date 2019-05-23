@@ -1,0 +1,70 @@
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: $space;
+  .container {
+    display: block;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 70vw;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    background: 0 0;
+    &-fluid {
+      width: 100vw;
+      &:nth-child(odd) {
+        background: linear-gradient(to right, #fcfcfc 50%, #fff 50%) !important;
+        .col:nth-child(odd) {
+          width: 40%;
+          background: #fcfcfc;
+          text-align: right;
+        }
+        .col:nth-child(even) {
+          width: 60%;
+          background: #fff;
+          text-align: left;
+        }
+      }
+      &:nth-child(even) {
+        background: linear-gradient(
+          to right,
+          #f8f8f8 50%,
+          #fcfcfc 50%
+        ) !important;
+        .col:nth-child(odd) {
+          width: 40%;
+          background: #f8f8f8;
+          text-align: right;
+        }
+        .col:nth-child(even) {
+          width: 60%;
+          background: #fcfcfc;
+          text-align: left;
+        }
+      }
+    }
+    .col {
+      width: 50%;
+      padding: $space * 3;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+//.row, .container {
+//border: 1px solid #6f9dc7;
+//background: rgba(41, 75, 105, 0.1);
+//}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}

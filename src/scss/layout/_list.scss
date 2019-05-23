@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    display: block;
+  }
+}
+ol.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: decimal-leading-zero;
+  li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+    padding: 0 3rem 2rem 3rem;
+    &:before {
+      color: $secondary-color;
+      content: "0" counter(list);
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+
+ul.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-right: -0.5rem;
+  li {
+    width: calc(33.3333% - 0.5rem);
+    border-left: 2px solid $secondary-color;
+    margin: 0 $space/2 $space/2 0;
+    padding: $space/2 $space;
+    background: #f8f8f8;
+  }
+}

@@ -1,0 +1,10 @@
+.btn {
+    display: block;
+    padding: .5rem 1rem;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 5px 2px rgba(255,255,255,.5);
+    }
+}

@@ -1,0 +1,14 @@
+main {
+    border: 1rem solid #fff;
+    padding: 0;
+    .banner {
+        display: flex;
+        flex-direction: row;
+        img {
+            max-width: 100%;
+        }
+    }
+    .content {
+        padding: $space;
+    }
+}
