@@ -18,7 +18,7 @@
     &-fluid {
       width: 100vw;
       &:nth-child(odd) {
-        background: linear-gradient(to right, #fcfcfc 50%, #fff 50%) !important;
+        background: linear-gradient(to right, #fcfcfc 50%, #fff 50%);
         .col:nth-child(odd) {
           width: 40%;
           background: #fcfcfc;
@@ -31,11 +31,7 @@
         }
       }
       &:nth-child(even) {
-        background: linear-gradient(
-          to right,
-          #f8f8f8 50%,
-          #fcfcfc 50%
-        ) !important;
+        background: linear-gradient(to right, #f8f8f8 50%, #fcfcfc 50%);
         .col:nth-child(odd) {
           width: 40%;
           background: #f8f8f8;

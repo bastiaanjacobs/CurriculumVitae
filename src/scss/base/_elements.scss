@@ -27,5 +27,11 @@ html {
   i {
     font-size: 3rem;
     margin: 2rem 1rem;
+    animation-duration: 5s;
   }
+}
+
+.gradient {
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 60%, #fff),
+    linear-gradient(70deg, #dbedff 32%, #ebfff0);
 }
