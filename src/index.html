@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- made with vuejs -->
   <head>
     <meta charset="utf-8" />
     <title>Curriculum Vitae Bastiaan Jacobs</title>
@@ -31,10 +32,7 @@
         <!-- announcement -->
         <section class="container container-fluid">
           <div class="col content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            perferendis consectetur reiciendis soluta laboriosam cum temporibus
-            nobis, molestiae facilis nihil officia eos possimus est incidunt?
-            Incidunt voluptate fuga cupiditate eos?
+            Lorem ipsum
           </div>
         </section>
         <!-- /announcement -->
@@ -54,18 +52,19 @@
                 title="Hello there, this is me"
               />
               <div>
-              <a href="https://twitter.com/bastiaanjacobs" target="_blank"><i class="fab fa-twitter-square" title="twitter"></i></a>
-              <a href="https://www.github.com/bastiaanjacobs" target="_blank"><i class="fab fa-github-square" title="github"></i></a>
-              <a href="https://www.linkedin.com/in/bastiaanjacobs" target="_blank"><i class="fab fa-linkedin" title="linkedin"></i></a>
+              <a v-bind:href="twitter" target="_blank"><i class="fab fa-twitter-square" title="twitter"></i></a>
+              <a v-bind:href="github" target="_blank"><i class="fab fa-github-square" title="github"></i></a>
+              <a v-bind:href="linkedin" target="_blank"><i class="fab fa-linkedin" title="linkedin"></i></a>
+              <a v-bind:href="website" target="_blank"><i class="fas fa-code-branch" title="personal website"></i></a>
               </div>
             </div>
             </div>
             <div class="col content">
-              <h2>{{ name }}<span class="secondary-color"> {{surname}}</span></h2>
-              <span>Front-end Developer & Product Specialist</span>
+              <h2>{{ name }}<span class="secondary-color"> {{ surname }}</span></h2>
+              <span>{{ title }}</span>
               <p>
-                  <p>
-                      Web Developer en SharePoint branding specialist. Ontwerp- en technologie-enthousiast. Duiker en gefascineerd door het zeeleven. Houdt ervan nieuwe plekken te verkennen. Animal avenger.
+                  <p class="summary">
+                    {{ summary }}
                   </p>
                   <div class="icons">
                     <i class="fab fa-sass" title="sass"></i>
